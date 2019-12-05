@@ -7,8 +7,8 @@
       Case Problem 3
 
       CSS Demo Form
-      Author: 
-      Date:   
+      Author: Nicole Garay
+      Date:   12/5/19
 
       Filename:   wm_demo.html
 
@@ -17,7 +17,9 @@
    <meta charset="utf-8" />
       <title>CSS Styles Demo</title>
       <link href="wm_reset.css" rel="stylesheet" />      
-      <link href="wm_styles.css" rel="stylesheet" />     
+      <link href="wm_styles.css" rel="stylesheet" />
+      <link href="wm_forms.css" rel="stylesheet" /> 
+      <script src="wm_script.js"></script>    
    </head>
 
 
@@ -69,6 +71,34 @@
       <section>
          <h1>CSS Demo</h1>
          
+         <form>
+            <textarea name="sampleText" id="sampleBox" placeholder="Enter sample text and press Tab key"
+            autofocus tabindex="1" wrap="hard"></textarea>
+            <p>Select the CSS style values from the form below and preview the effect on the
+               sample text in the preview box.</p>
+               <fieldset>
+                  <legend>Fonts</legend>
+                  <label>Font Family</label>
+                  <select name="selectFont" id="fontBox">
+                     <option value="default">default</option>
+                     <option value="serif">serif</option>
+                     <option value="sans-serif">sans-serif</option>
+                     <option value="monospace">monospace</option>
+                     <option value="cursive">cursive</option>
+                     <option value="fantasy">fantasy</option>
+                     <option value="arial">Arial</option>
+                     <option value="bookAntiqua">'Book Antiqua'</option>
+                     <option value="courierNew">'Courier New'</option>
+                     <option value="geneva">Geneva</option>
+                     <option value="helvetica">Helvetica</option>
+                     <option value="impact">Impact</option>
+                     <option value="palatino">Palatino</option>
+                     <option value="tahoma">Tahoma</option>
+                     <option value="tnRoman">'Times New Roman'</option>
+                  </select>
+               </fieldset>
+
+         </form>
 
          <h2>Rendered Text</h2>
          <div id="output"></div>
