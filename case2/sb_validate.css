@@ -1,0 +1,58 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 7
+   Case Problem 2
+
+   Spice Bowl Payment Form Validation Style Sheet
+   Author: Nicole Garay
+   Date:   12/5/19
+
+   Filename: sb_validate.css
+
+*/
+
+
+/* Validation Styles */
+
+input#firstBox:focus:not([type='radio']),
+input#lastBox:focus:not([type='radio']),
+input#streetBox:focus:not([type='radio']),
+input#streetBox2:focus:not([type='radio']),
+input#cityBox:focus:not([type='radio']),
+input#stateBox:focus:not([type='radio']),
+input#zipBox:focus:not([type='radio']),
+input#countryBox:focus:not([type='radio']),
+input#cardBox:focus:not([type='radio']),
+input#cscBox:focus:not([type='radio']){
+   background-color: rgb(255,218,165);
+}
+
+input#firstBox:focus:valid:not([type='radio']),
+input#lastBox:focus:valid:not([type='radio']),
+input#streetBox:focus:valid:not([type='radio']),
+input#streetBox2:focus:valid:not([type='radio']),
+input#cityBox:focus:valid:not([type='radio']),
+input#stateBox:focus:valid:not([type='radio']),
+input#zipBox:focus:valid:not([type='radio']),
+input#countryBox:focus:valid:not([type='radio']),
+input#cardBox:focus:valid:not([type='radio']),
+input#cscBox:focus:valid:not([type='radio']){
+   background: rgb(215,255,215) url(sb_valid.png) right/contain no-repeat;
+}
+
+input#firstBox:focus:invalid:not([type='radio']),
+input#lastBox:focus:invalid:not([type='radio']),
+input#streetBox:focus:invalid:not([type='radio']),
+input#streetBox2:focus:invalid:not([type='radio']),
+input#cityBox:focus:invalid:not([type='radio']),
+input#stateBox:focus:invalid:not([type='radio']),
+input#zipBox:focus:invalid:not([type='radio']),
+input#countryBox:focus:invalid:not([type='radio']),
+input#cardBox:focus:invalid:not([type='radio']),
+input#cscBox:focus:invalid:not([type='radio']){
+   background: rgb(255,245,215) url(sb_invalid.png) right/contain no-repeat;
+}
+
+
+
+
